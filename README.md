@@ -1,6 +1,6 @@
 # 犬猫判定アプリ
 ## 【仕様】
-GoogleColabにて「犬猫の画像判定用機械モデル」を２種作成、このモデル予測精度の高い方のモデルと「Flask」を利用し、Python3にてコードを作成。その後、「Render」でWeb公開しています。
+GoogleColabにて「犬猫の画像判定用機械モデル」を２種作成、このモデル予測精度の高い方のモデル（ファインチューニングで作成）と「Flask」を利用し、Python3にてコードを作成。その後、「Render」でWeb公開しています。
 ## 【Web公開URL】
 [犬猫判定アプリ](https://animal-app-zdb9.onrender.com/)  https://animal-app-zdb9.onrender.com/
 ## 【使用可能画像（拡張子）】
@@ -20,7 +20,7 @@ GoogleColabにて「犬猫の画像判定用機械モデル」を２種作成、
 ### ファインチューニング　　※今回はこちらを元にアプリを作成しております。
 ※torchvision.modelsのresnet18元にしました。
 
-### 自作モデルコード　　※GoogleColabにて
+### 自作モデルコード　　※参考までにこちらもどうぞ。
 https://colab.research.google.com/drive/1yDl4A23vdDDBR51HGtdifECI6UKol3J8?usp=sharing
 
 ## 【利用したツールなど】
