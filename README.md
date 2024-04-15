@@ -1,16 +1,6 @@
 # 犬猫判定アプリ
-## 目次
-- [仕様](https://github.com/manul280/animal_APP/edit/master/README.md#%E4%BB%95%E6%A7%98)　
-- Web公開URL
-- 使用可能画像（拡張子）
-- アプリ使用方法
-- コード
-- 利用したツールなど
-- 使用言語・ライブラリ
-- おまけ
-
 ## 【仕様】
-GoogleColabにて「犬猫の画像判定用機械モデル」を作成、このモデルの重み等を利用し、Python3にてコードを作成。その後、「Render」でWeb公開しています。
+GoogleColabにて「犬猫の画像判定用機械モデル」を２種作成、このモデル予測精度の高い方のモデルと「Flask」を利用し、Python3にてコードを作成。その後、「Render」でWeb公開しています。
 ## 【Web公開URL】
 [犬猫判定アプリ](https://animal-app-zdb9.onrender.com/)  https://animal-app-zdb9.onrender.com/
 ## 【使用可能画像（拡張子）】
@@ -26,12 +16,17 @@ GoogleColabにて「犬猫の画像判定用機械モデル」を作成、この
 
 ※ご使用の環境により、表示までにお時間がかかる場合がございます。ご容赦いただけますと幸いです。
 
-## 【コード】
-### 画像処理(犬猫判定)モデルコード　　※GoogleColabにて
+## 画像処理(犬猫判定)モデルコード　　※GoogleColabにて
+### ファインチューニング　　※今回はこちらを元にアプリを作成しております。
+※torchvision.modelsのresnet18元にしました。
+
+### 自作モデルコード　　※GoogleColabにて
 https://colab.research.google.com/drive/1yDl4A23vdDDBR51HGtdifECI6UKol3J8?usp=sharing
+
 ## 【利用したツールなど】
 - GoogleColab
 - Visual Studio Code
+- FLask
 - Render
 - GitHub
 ## 【使用言語・ライブラリ】
@@ -48,7 +43,14 @@ https://colab.research.google.com/drive/1yDl4A23vdDDBR51HGtdifECI6UKol3J8?usp=sh
   - glob
   - natsort
   - warnings
-
+## 【animal_APP　ファイル解説】
+- animal_APP/src
+  - /animal.py　：モジュールインポート、学習済みモデル対応の前処理、ネットワーク定義（モデルの構想）
+  - /appy.py　　：モジュールインポート、学習済みモデルでの推論、犬猫判定、データ入力および結果の（Flaskによる）Web表示
+  - /dog_cat.pt ：モデルの学習結果（重みなど）
+- animal_APP/src/templates
+  - /index.html ：Web表示時の初期画面用のフォーマット（入力画面）
+  - /result.html：Web表示時の結果表示画面用のフォーマット（出力画面）
 #### ＜おまけ＞
 ※よろしければ、こちらもご覧いただけると幸いです。
 色々学んだことをブログにまとめてます。
