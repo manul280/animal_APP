@@ -40,6 +40,7 @@ https://colab.research.google.com/drive/1yDl4A23vdDDBR51HGtdifECI6UKol3J8?usp=sh
   - pytorch_lightning
   - torchmetrics
   - torchvision
+  - resnet18
   - glob
   - natsort
   - warnings
