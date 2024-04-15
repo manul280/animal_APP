@@ -21,5 +21,7 @@ https://colab.research.google.com/drive/1yDl4A23vdDDBR51HGtdifECI6UKol3J8?usp=sh
   - torch
   - pytorch_lightning
   - torchmetrics
-  - 
+  - torchvision
+  - glob
+  - natsort
   - warnings
