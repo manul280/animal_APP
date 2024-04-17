@@ -21,10 +21,14 @@ GoogleColabにて「犬猫の画像判定用機械モデル」を２種作成、
 ### ファインチューニング　　※今回はこちらを元にアプリを作成しております。
 ※torchvision.modelsのresnet18を元にしました。
 
-ファインチューニングで画像処理モデル(犬猫判定)：https://colab.research.google.com/drive/1Yz7s6m0otORxifKz0lJmUmzJt2EzvhpH?usp=sharing
+ファインチューニングで画像処理モデル(犬猫判定)：
+
+https://colab.research.google.com/drive/1Yz7s6m0otORxifKz0lJmUmzJt2EzvhpH?usp=sharing
 
 ### 自作モデルコード　　※参考までにこちらもどうぞ。
-自作画像処理モデル(犬猫判定)：https://colab.research.google.com/drive/1yDl4A23vdDDBR51HGtdifECI6UKol3J8?usp=sharing
+自作画像処理モデル(犬猫判定)：
+
+https://colab.research.google.com/drive/1yDl4A23vdDDBR51HGtdifECI6UKol3J8?usp=sharing
 
 ## 【利用したツールなど】
 - GoogleColab
