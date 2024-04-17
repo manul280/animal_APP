@@ -56,11 +56,11 @@ https://colab.research.google.com/drive/1yDl4A23vdDDBR51HGtdifECI6UKol3J8?usp=sh
   - /animal.py　：モジュールインポート、学習済みモデル対応の前処理、ネットワーク定義（モデルの構想）
   - /appy.py　　：モジュールインポート、学習済みモデルでの推論、犬猫判定、データ入力および結果の（Flaskによる）Web表示
   - /dog_cat.pt ：モデルの学習結果（重みなど）
-  - 
+    
 - animal_APP/src/templates
   - /index.html ：Web表示時の初期画面用のフォーマット（入力画面）
   - /result.html：Web表示時の結果表示画面用のフォーマット（出力画面）
-  - 
+    
 - animal_APP
   - /requirements.txt：使用ライブラリーバージョン設定
   - /README.md：このanimal_APPの説明書
